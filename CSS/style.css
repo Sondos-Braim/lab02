@@ -1,0 +1,26 @@
+header{ 
+    text-align: center;
+    color: #9b269b;
+    font-size: 8pc;
+    margin-bottom: 100px;
+    margin-top: 5px;
+    text-shadow:5px,0px,14px,black ;   
+}
+section{
+    padding-left: 30px;
+}
+
+img{
+    height: 150px;
+}
+
+    footer{
+        margin-bottom: 0px;
+        border-style: outset;
+        margin-top: 450px;
+    }
+    h1{
+        padding-top: 15px;
+        margin:5px;
+        font-weight: bold;
+    }
