@@ -8,14 +8,16 @@ console.log('I cry when I watch romantic movies: no');
 while (question1.toLowerCase() !== 'yes' && question1.toLowerCase() !== 'no') {
   question1 = prompt('Answer with yes/no');
 }
-if (question1.toLowerCase() === 'yes') {
-  //console.log('Haha, I am not that emotional');
+switch (question1.toLowerCase()) {
+case 'yes':
+//console.log('Haha, I am not that emotional');
   alert('Haha, I am not that emotional');
-}
-else {
-  //console.log('You\'re right!');
+  break;
+default:
+//console.log('You\'re right!');
   alert('You\'re right!');
   counter++;
+  break;
 }
 
 
@@ -82,14 +84,17 @@ else {
   alert('You\'re wrong');
 }
 var userGuess = prompt('Now please guess a number, you have 4 attempts');
-var user=parseInt(userGuess);
-console.log('insert a number: 6');
+var user = parseInt(userGuess);
+while (isNaN(user) || user === '') {
+  user = prompt('Please insert a number');
+}
+
 var num = 6;
 
 for (var i = 0; i < 3; i++) {
   if (user > num) {
     alert('Too high');
-    user= prompt('Try again');
+    user = prompt('Try again');
   }
   else if (user < num) {
     alert('Too low');
@@ -104,6 +109,7 @@ for (var i = 0; i < 3; i++) {
 }
 
 alert('The correct number is ' + num);
+console.log('insert a number: 6');
 
 var question7 = prompt('Write the name of a music instrument');
 console.log('name a music instrument: piano, guitar,violin');
@@ -118,9 +124,8 @@ for (var j = 0; j < 5; j++) {
     counter++;
   }
 }
-for (var y=0;y<answer.length;y++){
-  alert(answer[y]);
-}
+alert('The answer is: \n 1-' + answer[0] + '\n 2- ' + answer[1] + '\n 3-' + answer[2]);
+
 
 alert('Your score is ' + counter + ' out of 7');
 
