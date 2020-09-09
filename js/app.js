@@ -58,6 +58,7 @@ else {
   alert('Believe me, I am');
 }
 }
+function piano(){
 var question4 = prompt('I can play the piano');
 console.log('I can play the piano: no');
 while (question4.toLowerCase() !== 'yes' && question4.toLowerCase() !== 'no') {
@@ -71,6 +72,7 @@ else {
   //console.log('you guessed it!');
   alert('you guessed it!');
   counter++;
+}
 }
 var question5 = prompt('I love dogs');
 console.log('I love dogs: yes');
