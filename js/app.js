@@ -2,6 +2,7 @@
 
 let app = document.getElementById('app');
 var counter = 0;
+function movies(){
 alert('Please answer with yes or no!');
 var question1 = prompt('I cry when I watch romantic movies');
 console.log('I cry when I watch romantic movies: no');
@@ -19,8 +20,8 @@ default:
   counter++;
   break;
 }
-
-
+}
+function school(){
 var question2 = prompt('I was almost suspended from school as a child');
 console.log('I was almost suspended from school as a child: no');
 while (question2.toLowerCase() !== 'yes' && question2.toLowerCase() !== 'no') {
@@ -38,7 +39,8 @@ else {
   alert('You\'re right!');
   counter++;
 }
-
+}
+function lie(){
 var question3 = prompt('I am a good liar');
 console.log('I am a good liar: yes');
 
@@ -55,6 +57,8 @@ else {
   //console.log('Believe me, I am');
   alert('Believe me, I am');
 }
+}
+function piano(){
 var question4 = prompt('I can play the piano');
 console.log('I can play the piano: no');
 while (question4.toLowerCase() !== 'yes' && question4.toLowerCase() !== 'no') {
@@ -69,6 +73,8 @@ else {
   alert('you guessed it!');
   counter++;
 }
+}
+function dog(){
 var question5 = prompt('I love dogs');
 console.log('I love dogs: yes');
 while (question5.toLowerCase() !== 'yes' && question5.toLowerCase() !== 'no') {
@@ -83,6 +89,8 @@ else {
   //console.log('You\'re wrong');
   alert('You\'re wrong');
 }
+}
+function number(){
 var userGuess = prompt('Now please guess a number, you have 4 attempts');
 var user = parseInt(userGuess);
 while (isNaN(user) || user === '') {
@@ -110,7 +118,7 @@ for (var i = 0; i<4 ; i++) {
 
 alert('The correct number is ' + num);
 console.log('insert a number: 6');
-
+}
 var question7 = prompt('Write the name of a music instrument');
 console.log('name a music instrument: piano, guitar,violin');
 var answer = ['piano', 'guitar', 'violin'];
