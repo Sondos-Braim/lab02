@@ -21,7 +21,7 @@ default:
   break;
 }
 }
-
+function school(){
 var question2 = prompt('I was almost suspended from school as a child');
 console.log('I was almost suspended from school as a child: no');
 while (question2.toLowerCase() !== 'yes' && question2.toLowerCase() !== 'no') {
@@ -39,7 +39,7 @@ else {
   alert('You\'re right!');
   counter++;
 }
-
+}
 var question3 = prompt('I am a good liar');
 console.log('I am a good liar: yes');
 
