@@ -91,7 +91,7 @@ while (isNaN(user) || user === '') {
 
 var num = 6;
 
-for (var i = 0; i < 3; i++) {
+for (var i = 0; i<4 ; i++) {
   if (user > num) {
     alert('Too high');
     user = prompt('Try again');
@@ -114,7 +114,7 @@ console.log('insert a number: 6');
 var question7 = prompt('Write the name of a music instrument');
 console.log('name a music instrument: piano, guitar,violin');
 var answer = ['piano', 'guitar', 'violin'];
-for (var j = 0; j < 5; j++) {
+for (var j = 0; j < 6; j++) {
   if (question7 !== answer[0] && question7 !== answer[1] && question7 !== answer[2]) {
     question7 = prompt('Try again');
   }
