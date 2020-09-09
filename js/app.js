@@ -74,6 +74,7 @@ else {
   counter++;
 }
 }
+function dog (){
 var question5 = prompt('I love dogs');
 console.log('I love dogs: yes');
 while (question5.toLowerCase() !== 'yes' && question5.toLowerCase() !== 'no') {
@@ -88,6 +89,8 @@ else {
   //console.log('You\'re wrong');
   alert('You\'re wrong');
 }
+}
+
 var userGuess = prompt('Now please guess a number, you have 4 attempts');
 var user = parseInt(userGuess);
 while (isNaN(user) || user === '') {
