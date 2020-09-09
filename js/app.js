@@ -74,7 +74,7 @@ else {
   counter++;
 }
 }
-function dog (){
+function dog(){
 var question5 = prompt('I love dogs');
 console.log('I love dogs: yes');
 while (question5.toLowerCase() !== 'yes' && question5.toLowerCase() !== 'no') {
@@ -90,7 +90,7 @@ else {
   alert('You\'re wrong');
 }
 }
-
+function number(){
 var userGuess = prompt('Now please guess a number, you have 4 attempts');
 var user = parseInt(userGuess);
 while (isNaN(user) || user === '') {
@@ -118,7 +118,7 @@ for (var i = 0; i<4 ; i++) {
 
 alert('The correct number is ' + num);
 console.log('insert a number: 6');
-
+}
 var question7 = prompt('Write the name of a music instrument');
 console.log('name a music instrument: piano, guitar,violin');
 var answer = ['piano', 'guitar', 'violin'];
