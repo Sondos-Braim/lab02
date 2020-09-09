@@ -40,6 +40,7 @@ else {
   counter++;
 }
 }
+function lie(){
 var question3 = prompt('I am a good liar');
 console.log('I am a good liar: yes');
 
@@ -55,6 +56,7 @@ if (question3.toLowerCase() === 'yes') {
 else {
   //console.log('Believe me, I am');
   alert('Believe me, I am');
+}
 }
 var question4 = prompt('I can play the piano');
 console.log('I can play the piano: no');
