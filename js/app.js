@@ -6,7 +6,8 @@ function movies() {
   alert('Please answer with yes or no!');
   var question1 = prompt('I cry when I watch romantic movies');
   console.log('I cry when I watch romantic movies: no');
-  while (question1.toLowerCase() !== 'yes' && question1.toLowerCase() !== 'no') {
+
+  while (question1.toLowerCase() !== 'yes' && question1.toLowerCase() !== 'no'&&question1.toLowerCase() !== 'y' && question1.toLowerCase() !== 'n') {
     question1 = prompt('Answer with yes/no');
   }
   switch (question1.toLowerCase()) {
@@ -14,27 +15,39 @@ function movies() {
   //console.log('Haha, I am not that emotional');
     alert('Haha, I am not that emotional');
     break;
-  default:
+  case 'y':
+  //console.log('Haha, I am not that emotional');
+    alert('Haha, I am not that emotional');
+    break;
+  case 'no':
     //console.log('You\'re right!');
     alert('You\'re right!');
     counter++;
+    break;
+  case 'n':
+    //console.log('You\'re right!');
+    alert('You\'re right!');
+    counter++;
+    break;
+  default:
+    alert('ok');
     break;
   }
 }
 function school() {
   var question2 = prompt('I was almost suspended from school as a child');
   console.log('I was almost suspended from school as a child: no');
-  while (question2.toLowerCase() !== 'yes' && question2.toLowerCase() !== 'no') {
+  while (question2.toLowerCase() !== 'yes' && question2.toLowerCase() !== 'no'&&question2.toLowerCase() !== 'y' && question2.toLowerCase() !== 'n') {
     question2 = prompt('Answer with yes/no');
   }
 
-  if (question2.toLowerCase() === 'yes') {
+  if (question2.toLowerCase() === 'yes'||question2.toLowerCase() === 'y') {
 
     //console.log('Haha, that\'s not true!');
     alert('Haha, that\'s not true!');
   }
 
-  else {
+  else if(question2.toLowerCase() === 'no'||question2.toLowerCase() === 'n'){
     //console.log('You\'re right!');
     alert('You\'re right!');
     counter++;
@@ -44,16 +57,16 @@ function lie() {
   var question3 = prompt('I am a good liar');
   console.log('I am a good liar: yes');
 
-  while (question3.toLowerCase() !== 'yes' && question3.toLowerCase() !== 'no') {
+  while (question3.toLowerCase() !== 'yes' && question3.toLowerCase() !== 'no'&&question3.toLowerCase() !== 'y' && question3.toLowerCase() !== 'n') {
     question3 = prompt('Answer with yes/no');
   }
 
-  if (question3.toLowerCase() === 'yes') {
+  if (question3.toLowerCase() === 'yes'||question3.toLowerCase() === 'y') {
     //console.log('you\'re right!');
     alert('you\'re right!');
     counter++;
   }
-  else {
+  else if(question3.toLowerCase() === 'no'||question3.toLowerCase() === 'n'){
     //console.log('Believe me, I am');
     alert('Believe me, I am');
   }
@@ -61,14 +74,14 @@ function lie() {
 function piano() {
   var question4 = prompt('I can play the piano');
   console.log('I can play the piano: no');
-  while (question4.toLowerCase() !== 'yes' && question4.toLowerCase() !== 'no') {
+  while (question4.toLowerCase() !== 'yes' && question4.toLowerCase() !== 'no'&&question4.toLowerCase() !== 'y' && question4.toLowerCase() !== 'n') {
     question4 = prompt('Answer with yes/no');
   }
-  if (question4.toLowerCase() === 'yes') {
+  if (question4.toLowerCase() === 'yes'||question4.toLowerCase() === 'y') {
     //console.log('Unfortunately, you\'re wrong');
     alert('Unfortunately, you\'re wrong');
   }
-  else {
+  else if(question4.toLowerCase() === 'no'||question4.toLowerCase() === 'n'){
     //console.log('you guessed it!');
     alert('you guessed it!');
     counter++;
@@ -77,29 +90,28 @@ function piano() {
 function dog() {
   var question5 = prompt('I love dogs');
   console.log('I love dogs: yes');
-  while (question5.toLowerCase() !== 'yes' && question5.toLowerCase() !== 'no') {
+  while (question5.toLowerCase() !== 'yes' && question5.toLowerCase() !== 'no'&&question5.toLowerCase() !== 'y' && question5.toLowerCase() !== 'n') {
     question5 = prompt('Answer with yes/no');
   }
-  if (question5.toLowerCase() === 'yes') {
+  if (question5.toLowerCase() === 'yes'||question5.toLowerCase() === 'y') {
     //console.log('You\'re right! I love dogs because they\'re loyal');
     alert('You\'re right! I love dogs because they\'re loyal');
     counter++;
   }
-  else {
+  else if(question5.toLowerCase() === 'no'||question5.toLowerCase() === 'n'){
     //console.log('You\'re wrong');
     alert('You\'re wrong');
   }
 }
 function number() {
-  var userGuess = prompt('Now please guess a number, you have 4 attempts');
+  var userGuess = prompt('How many times did I watch the Titanic movie, you have 4 attempts');
   var user = parseInt(userGuess);
   while (isNaN(user) || user === '') {
-    user = prompt('Please insert a number');
-  }
+    user = prompt('Please insert a number'); }
 
-  var num = 6;
+  var num = 1;
+  for (var i = 0; i < 3; i++) {
 
-  for (var i = 0; i < 4; i++) {
     if (user > num) {
       alert('Too high');
       user = prompt('Try again');
@@ -123,18 +135,20 @@ function music() {
   var question7 = prompt('Write the name of a music instrument');
   console.log('name a music instrument: piano, guitar,violin');
   var answer = ['piano', 'guitar', 'violin'];
-  for (var j = 0; j < 6; j++) {
-    if (question7 !== answer[0] && question7 !== answer[1] && question7 !== answer[2]) {
-      question7 = prompt('Try again');
-    }
-    else {
+  for (var j = 0; j < 5; j++) {
+    if (question7 === answer[0] || question7 === answer[1] || question7 === answer[2]) {
       alert('good job ' + question7 + ' is a type of musical instruments');
       j = 10;
       counter++;
+      break;
+    }
+    else {
+      question7 = prompt('Try again');
     }
   }
   alert('The answer is: \n 1-' + answer[0] + '\n 2- ' + answer[1] + '\n 3-' + answer[2]);
 }
+
 
 
 
