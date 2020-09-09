@@ -2,6 +2,7 @@
 
 let app = document.getElementById('app');
 var counter = 0;
+function movies(){
 alert('Please answer with yes or no!');
 var question1 = prompt('I cry when I watch romantic movies');
 console.log('I cry when I watch romantic movies: no');
@@ -19,7 +20,7 @@ default:
   counter++;
   break;
 }
-
+}
 
 var question2 = prompt('I was almost suspended from school as a child');
 console.log('I was almost suspended from school as a child: no');
