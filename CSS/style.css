@@ -1,47 +1,61 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+:root{
+    --main:#D60068;
+}
 header{ 
     text-align: center;
-    color: #9b269b;
+    color: var(--main);
     font-size: 8pc;
-    margin-bottom: 100px;
-    margin-top: 5px;
     text-shadow:5px 0px 14px black;  
-    width: 100%;
-    height: 200px;
-}
-ul,img{
-    padding-left: 30px;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    height: 180px;
+    background-image: url(../img/heart\ pattern.jpg);
+    border-radius: 15px;
+    margin: 0px 10px 0px 175px;
 }
 body{
-    background:url("../img/ground.jpg");
+    background:url("../img/light_gray_background.jpg");
 }
 img{
     height: 150px;
+    width: 150px;
+   border-radius: 70px;
+   margin-left: 45%;
 }
-
-    footer{
-        margin-bottom: 5px;
-        border-style: outset;
-        margin-top: 450px;
+footer{
+    margin-bottom: 5px;
+    border-style: outset;
+    margin-top: 450px;
+    text-align: center;
     }
+ol{
+   list-style:decimal;
+   margin:10px 10px 10px 40px;
+    }
+.sub{
+    color:#5a5a0b;
+    background-color:#f8d0c6;
+    padding: 30px;
+    font-size: 2pc;
+    margin: 50px 20px 0px 20px;
+    font-weight: bold;
+    text-align: center;
+        
+    }
+#app{
+    font-size: 2pc;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 200px;
     
-    ol{
-        list-style:decimal;
-        margin:10px 10px 10px 40px;
     }
-    .sub{
-        color:yellow;
-        background-color: #ce1dc0;
-        padding: 30px;
-        font-size: 2pc;
-        margin: 50px 20px 0px 20px;
-        font-weight: bold;
-    }
-    #app{
-        font-size: 2pc;
-        margin-bottom: 50px;
-    
-    }
-    ul{
+ul{
     list-style-type:disc;
     margin-top: 10px;
+    padding-left: 30px;
     }
